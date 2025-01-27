@@ -18,8 +18,7 @@ body {
 }
 
 #hero_section {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 98%);
+    background-image: linear-gradient(to right, #0b272f, #132e37, #1a363e, #223e46, #29464e, #29464e, #29464e, #29464e, #213e46, #1a363e, #132e37, #0b262f);
     background-size: cover;
     align-items: center;
     padding: 20px 0;
@@ -43,7 +42,7 @@ nav {
 }
 
 h2 {
-    margin: 0;
+    margin: 0 20px;
     font-size: 1.5rem;
     font-weight: normal;
 }
@@ -96,5 +95,6 @@ main{
 
     >div{
         margin-top: 10px;
+        border-radius: 50%;
     }
 }
