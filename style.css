@@ -1,18 +1,25 @@
 body {
   font-family: "Roboto", serif;
-  font-optical-sizing: auto;
   font-weight: lighter;
   font-style: normal;
+  font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+}
+
+* {
+  font-family: "Roboto", serif;
+  font-weight: lighter;
+  color: white;
+  text-transform: none;
 }
 
 #hero_section {
-  background-color: #01468c;
-  background-image: url(img/bg-hero.jpg);
-  background-repeat: no-repeat;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 98%);
   background-size: cover;
   align-items: center;
   padding: 20px 0;
@@ -24,12 +31,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-}
-
-nav h2 {
   margin: 0;
   font-size: 1.5rem;
-  font-weight: 700;
+  position: relative;
+}
+
+.nav-links {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 nav ul {
@@ -66,6 +82,20 @@ nav #button_signin {
 nav #button_signup {
   background-color: white;
   color: black;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+main > div {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
