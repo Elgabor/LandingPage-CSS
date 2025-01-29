@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto", serif;
-  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-style: normal;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
@@ -44,7 +44,7 @@ nav {
 h2 {
   margin: 0 20px;
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 nav ul {
@@ -83,6 +83,7 @@ nav #button_signup {
   color: black;
 }
 
+/*Main Section*/
 main {
   margin-top: 20px;
   display: flex;
@@ -93,9 +94,36 @@ main {
   text-align: center;
   font-weight: normal;
 }
+main > h1 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+}
+main > .second-h1 {
+  margin-top: 0;
+  color: #82ACF9;
+  background-image: linear-gradient(135deg, #82ACF9 0%, #92E7FD 50%, #E3DAB5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 main > div {
   margin-top: 10px;
   border-radius: 50%;
+}
+main div p {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: rgba(240, 240, 240, 0.3);
+  border-radius: 8px;
+}
+
+main div p > svg {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
