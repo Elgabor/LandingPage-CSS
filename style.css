@@ -69,8 +69,8 @@ nav button {
   padding: 8px 15px;
   font-size: 1rem;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 400;
 }
 
 nav #button_signin {
@@ -83,7 +83,7 @@ nav #button_signup {
   color: black;
 }
 
-/*Main Section*/
+/*Main Section - hero section*/
 main {
   margin-top: 20px;
   display: flex;
@@ -112,6 +112,7 @@ main > div {
   margin-top: 10px;
   border-radius: 50%;
 }
+
 main div p {
   display: flex;
   align-items: center;
@@ -124,6 +125,63 @@ main div p > svg {
   margin-right: 5px;
   height: 15px;
   width: 15px;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.hero-button > button {
+  padding: 8px 15px;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  min-width: 120px;
+  min-height: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+.hero-button > #start-button {
+  background-color: #7ed6df;
+  color: black;
+}
+.hero-button > #explore-button {
+  background-color: transparent;
+  border: 1px solid #7ed6df;
+  color: #7ed6df;
+}
+
+/*Bottom Section - hero section*/
+#bottom {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+#bottom > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  min-width: 340px;
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.1);
+  border-radius: 8px;
+}
+#bottom > div > h2 {
+  margin-left: 0;
+  margin-top: 15px;
+  font-size: 20px;
+}
+#bottom > div > p {
+  font-size: 1rem;
+}
+#bottom > div > svg {
+  height: 50px;
+  width: 50px;
+  color: #7ed6df;
 }
 
 /*# sourceMappingURL=style.css.map */
