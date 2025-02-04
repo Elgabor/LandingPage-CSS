@@ -184,4 +184,71 @@ main div p > svg {
   color: #7ed6df;
 }
 
+/*Mid_Section*/
+.mid-section {
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.mid-section > h2 {
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 27px;
+}
+.mid-section > h2 br {
+  margin-top: 10px;
+}
+.mid-section > p {
+  color: black;
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.mid-section > .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 30px;
+  width: 75vw;
+  height: 100vh;
+}
+.mid-section > .container > .card div h2, .mid-section > .container .card div p {
+  color: black;
+  text-align: start;
+  margin: 0;
+}
+.mid-section > .container > .card {
+  background-color: black;
+  margin: 10px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8%;
+}
+.mid-section > .container > .card > img {
+  height: 300px;
+  width: 300px;
+  align-items: center;
+}
+.mid-section > .container > .card-1 {
+  background-color: #ECFAFA;
+}
+.mid-section > .container > .card-2 {
+  background-color: #ECF2F9;
+}
+.mid-section > .container > .card-3 {
+  background-color: #EBF8EF;
+}
+.mid-section > .container > .card-4 {
+  background-color: #FFF4EB;
+}
+
 /*# sourceMappingURL=style.css.map */
