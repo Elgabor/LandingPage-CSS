@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: black;
 }
 
 * {
@@ -290,6 +290,85 @@ main div p > svg {
   margin-top: 10px;
   margin-left: 0;
   color: black;
+}
+
+/* help section */
+.help-section {
+  display: flex;
+  margin-top: 60px;
+  color: black;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.help-section > .container2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  color: black;
+  width: 75vw;
+}
+.help-section > .container2 > .title-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.help-section > .container2 > .title-button > h2 {
+  color: black;
+  font-weight: 500;
+  font-size: 27px;
+  margin-left: 0;
+}
+.help-section > .container2 > .title-button > #support-button {
+  background-color: transparent;
+  color: black;
+  border: solid 2px black;
+  padding: 5px;
+  margin-top: 10px;
+}
+.help-section > .container2 > .qa-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.help-section > .container2 > .qa-item > .toggle {
+  display: none;
+}
+.help-section > .container2 > .qa-item > .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.help-section > .container2 > .qa-item > .question > .question-text {
+  color: black;
+}
+.help-section > .container2 > .qa-item > .question .icon::before {
+  content: "+";
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.help-section > .container2 > .qa-item > .toggle:checked + .question .icon::before {
+  content: "-";
+  transform: rotate(180deg);
+}
+.help-section > .container2 > .qa-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.help-section > .container2 > .qa-item .toggle:checked ~ .answer {
+  max-height: 300px;
+}
+.help-section > .container2 > .qa-item .answer p {
+  margin: 10px 0 0 0;
+  color: #555;
 }
 
 /*# sourceMappingURL=style.css.map */
