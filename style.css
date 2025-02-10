@@ -83,7 +83,6 @@ nav #button_signup {
   color: black;
 }
 
-/*Main Section - hero section*/
 main {
   margin-top: 20px;
   display: flex;
@@ -94,21 +93,19 @@ main {
   text-align: center;
   font-weight: normal;
 }
-main > h1 {
+main h1 {
   font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 3.5rem;
 }
-main > .second-h1 {
-  margin-top: 0;
-  color: #82ACF9;
-  background-image: linear-gradient(135deg, #82ACF9 0%, #92E7FD 50%, #E3DAB5 100%);
+main .second-h1 {
+  color: #82acf9;
+  background-image: linear-gradient(135deg, #82acf9 0%, #92e7fd 50%, #e3dab5 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main > div {
+main div {
   margin-top: 10px;
   border-radius: 50%;
 }
@@ -133,7 +130,7 @@ main div p > svg {
   gap: 10px;
   justify-content: center;
 }
-.hero-button > button {
+.hero-button button {
   padding: 8px 15px;
   font-size: 0.875rem;
   border-radius: 8px;
@@ -142,17 +139,16 @@ main div p > svg {
   text-align: center;
   font-weight: 400;
 }
-.hero-button > #start-button {
+.hero-button #start-button {
   background-color: #7ed6df;
   color: black;
 }
-.hero-button > #explore-button {
+.hero-button #explore-button {
   background-color: transparent;
   border: 1px solid #7ed6df;
   color: #7ed6df;
 }
 
-/*Bottom Section - hero section*/
 #bottom {
   display: flex;
   gap: 30px;
@@ -160,7 +156,7 @@ main div p > svg {
   justify-content: center;
   margin-top: 80px;
 }
-#bottom > div {
+#bottom div {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -170,21 +166,19 @@ main div p > svg {
   background-color: rgba(240, 240, 240, 0.1);
   border-radius: 8px;
 }
-#bottom > div > h2 {
-  margin-left: 0;
-  margin-top: 15px;
+#bottom div h2 {
+  margin: 15px 0 0;
   font-size: 20px;
 }
-#bottom > div > p {
+#bottom div p {
   font-size: 1rem;
 }
-#bottom > div > svg {
+#bottom div svg {
   height: 50px;
   width: 50px;
   color: #7ed6df;
 }
 
-/*Mid_Section*/
 .mid-section {
   background-color: white;
   align-items: center;
@@ -192,7 +186,7 @@ main div p > svg {
   flex-direction: column;
   margin-top: 60px;
 }
-.mid-section > h2 {
+.mid-section h2 {
   color: black;
   line-height: 1.5;
   text-align: center;
@@ -200,31 +194,20 @@ main div p > svg {
   font-weight: 500;
   font-size: 27px;
 }
-.mid-section > h2 br {
-  margin-top: 10px;
-}
-.mid-section > p {
+.mid-section p {
   color: black;
   font-size: 12px;
-  margin-bottom: 15px;
-  margin-top: 0;
+  margin: 0 0 15px;
 }
-.mid-section > .container {
+.mid-section .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
   margin: 30px;
   width: 75vw;
-  height: fit-content;
 }
-.mid-section > .container > .card div h2, .mid-section > .container .card div p {
-  color: black;
-  text-align: start;
-  margin: 0;
-}
-.mid-section > .container > .card {
+.mid-section .container .card {
   background-color: black;
-  margin: 10px;
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -233,142 +216,146 @@ main div p > svg {
   gap: 10px;
   border-radius: 8%;
 }
-.mid-section > .container > .card > img {
+.mid-section .container .card img {
   height: 300px;
   width: 300px;
-  align-items: center;
 }
-.mid-section > .container > .card-1 {
-  background-color: #ECFAFA;
+.mid-section .container .card div h2, .mid-section .container .card div p {
+  color: black;
+  text-align: start;
+  margin: 0;
 }
-.mid-section > .container > .card-2 {
-  background-color: #ECF2F9;
+.mid-section .container .card.card-1 {
+  background-color: #ecfafa;
 }
-.mid-section > .container > .card-3 {
-  background-color: #EBF8EF;
+.mid-section .container .card.card-2 {
+  background-color: #ecf2f9;
 }
-.mid-section > .container > .card-4 {
-  background-color: #FFF4EB;
+.mid-section .container .card.card-3 {
+  background-color: #ebf8ef;
+}
+.mid-section .container .card.card-4 {
+  background-color: #fff4eb;
 }
 
-/* how-it-works section */
 .how-it-work {
   margin-top: 60px;
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100vw;
 }
-.how-it-work > h2 {
-  margin: 90px 0 5px 0; /* Margine superiore 90px, inferiore 5px, sinistro e destro 0 */
+.how-it-work h2 {
+  margin: 90px 0 5px;
   color: black;
   font-weight: 500;
   font-size: 27px;
 }
-.how-it-work > .container-2 {
+.how-it-work .container-2 {
   display: flex;
-  column-gap: 50px;
-  width: fit-content;
-  height: fit-content;
+  gap: 50px;
   justify-content: center;
-  align-items: center;
   margin-top: 80px;
 }
-.how-it-work > .container-2 > .card-h {
+.how-it-work .container-2 .card-h {
   display: flex;
   flex-direction: column;
-  margin-bottom: 200px;
 }
-.how-it-work > .container-2 > .card-h > img {
+.how-it-work .container-2 .card-h img {
   width: fit-content;
   height: auto;
   border-radius: 5%;
 }
-.how-it-work > .container-2 > .card-h > h2, .how-it-work > .container-2 > .card-h p {
+.how-it-work .container-2 .card-h h2, .how-it-work .container-2 .card-h p {
   margin-top: 10px;
-  margin-left: 0;
   color: black;
 }
 
-/* help section */
+/* Help Section */
 .help-section {
   display: flex;
   margin-top: 60px;
-  color: black;
   width: 100vw;
   align-items: center;
   justify-content: center;
-  height: auto;
 }
-.help-section > .container2 {
+.help-section .container2 {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 20px;
-  color: black;
+  gap: 40px;
   width: 75vw;
 }
-.help-section > .container2 > .title-button {
+.help-section .container2 .title-button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  justify-content: flex-start;
 }
-.help-section > .container2 > .title-button > h2 {
+.help-section .container2 .title-button h2 {
   color: black;
   font-weight: 500;
   font-size: 27px;
-  margin-left: 0;
+  margin: 0;
 }
-.help-section > .container2 > .title-button > #support-button {
+.help-section .container2 .title-button #support-button {
   background-color: transparent;
   color: black;
   border: solid 2px black;
-  padding: 5px;
+  padding: 10px 15px;
   margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
 }
-.help-section > .container2 > .qa-item {
+.help-section .container2 .qa-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+  gap: 15px;
+  margin-top: 80px;
+  margin-left: 20px;
 }
-.help-section > .container2 > .qa-item > .toggle {
+.help-section .container2 .qa-list .qa-item {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  overflow: hidden;
+}
+.help-section .container2 .qa-list .qa-item .toggle {
   display: none;
 }
-.help-section > .container2 > .qa-item > .question {
+.help-section .container2 .qa-list .qa-item .question {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   cursor: pointer;
-  font-size: 1.2rem;
-}
-.help-section > .container2 > .qa-item > .question > .question-text {
+  font-weight: bold;
+  font-size: 1.1rem;
   color: black;
 }
-.help-section > .container2 > .qa-item > .question .icon::before {
+.help-section .container2 .qa-list .qa-item .question-text {
+  color: black;
+}
+.help-section .container2 .qa-list .qa-item .icon::before {
   content: "+";
   font-size: 1.5rem;
   transition: transform 0.3s ease;
 }
-.help-section > .container2 > .qa-item > .toggle:checked + .question .icon::before {
+.help-section .container2 .qa-list .qa-item .toggle:checked + .question .icon::before {
   content: "-";
-  transform: rotate(180deg);
 }
-.help-section > .container2 > .qa-item .answer {
+.help-section .container2 .qa-list .qa-item .answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
-.help-section > .container2 > .qa-item .toggle:checked ~ .answer {
-  max-height: 300px;
+.help-section .container2 .qa-list .qa-item .toggle:checked ~ .answer {
+  max-height: 500px;
 }
-.help-section > .container2 > .qa-item .answer p {
+.help-section .container2 .qa-list .qa-item .answer p {
   margin: 10px 0 0 0;
   color: #555;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
